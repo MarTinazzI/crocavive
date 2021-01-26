@@ -7,8 +7,6 @@
         class="phone-container"
     >
       <div class="not-found">
-        <HeaderBar/>
-
         <div class="not-found-container-box">
           <div class="not-found-container">
             <h1 class="not-found-text">404</h1>
@@ -20,18 +18,15 @@
 </template>
 
 <script>
-import HeaderBar from "@/shared/HeaderBar/HeaderBar";
 
 export default {
   name: 'SuperCategory',
-  components: {
-    HeaderBar,
-  },
 }
 </script>
 
 <style
     lang="scss"
+    scoped
 >
 @import "src/base";
 

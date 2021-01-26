@@ -3,27 +3,19 @@ import VueRouter from 'vue-router'
 import Vue from 'vue'
 import Dashboard from './screen/Dashboard/Dashboard'
 import NotFound from './screen/NotFound/NotFound'
-import HomeRouter from '@/screen/Home/GuiaLevelUpRouter'
+import GuiaLevelUpRouter from "@/screen/GuiaLevelUp/GuiaLevelUpRouter";
 
 Vue.use(VueRouter)
 
 let children = [
-  HomeRouter,
-  MemoryRouter,
-  SuperCategoryRouter,
-  CategoryRouter,
-  CategoryDetailRouter,
-  PlayScreenRouter,
-  PlayRouter,
-  RankingRouter,
-  RankingDetailRouter,
+  GuiaLevelUpRouter
 ]
 
 let routes = [
   {
     path: '/',
     component: Dashboard,
-    redirect: '/home',
+    redirect: '/levelup',
     children
   },
   { path: '*', component: NotFound }

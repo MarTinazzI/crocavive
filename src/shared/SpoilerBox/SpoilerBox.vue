@@ -1,9 +1,10 @@
 <template>
-<div>
-  <v-card>
-
+  <v-card style="height: fit-content;" class="mb-4">
+    <v-card-title v-html="title"/>
+    <v-card-text>
+      <slot/>
+    </v-card-text>
   </v-card>
-</div>
 </template>
 
 <script>
@@ -14,6 +15,10 @@ export default {
       type: Boolean,
       default: false
     },
+    title: {
+      type: String,
+      default: ''
+    }
   },
   watch: {
     open(newValue) {

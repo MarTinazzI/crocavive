@@ -27,24 +27,18 @@ export default {
   width: 100vw;
   display: flex;
   justify-content: center;
+  background: #d1d1d1;
 }
 
 .phone-container {
   flex: 1;
   max-width: 800px;
   min-height: 100vh;
-  height: 100vh;
   border-radius: 8px;
 }
 
 @media screen and (min-width: 601px) {
-
-  .screen-container {
-    padding: 5px;
-  }
-
   .phone-container {
-    height: 100vh;
     min-height: 100vh;
   }
 }
